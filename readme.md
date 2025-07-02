@@ -1,7 +1,3 @@
-<style>
-img { background: #fff; }
-</style>
-
 # Alternative Optimization Methods for Neural Networks
 
 This repository contains the code, report, and results for a research project exploring **alternative optimization methods for neural network training**. The project investigates the effectiveness of gradient-free optimization techniques—specifically, **Genetic Algorithms (GA)** and **Simulated Annealing (SA)**—and compares them to traditional **Gradient Descent (GD)**.
@@ -54,21 +50,26 @@ A simple feedforward neural network is used as the base model for all experiment
 
 ### Training with Gradient Descent
 
-<img src="images/gradient_train.png" width="50%" />
+<div style="background-color: white; width:50%">
+    <img src="images/gradient_train.png" width="100%" />
+</div>
 <img src="images/gradient_train_loss.png" width="50%" />
 
 Gradient descent effectively optimizes the neural network, achieving a significant reduction in loss.
 
 ### Training with Genetic Algorithm
-
-<img src="images/genetic_train.png" width="50%" />
+<div style="background-color: white; width:50%">
+    <img src="images/genetic_train.png" width="100%" />
+</div>
 <img src="images/genetic_train_loss.png" width="50%" />
 
 The genetic algorithm can decrease the loss, but not as efficiently as gradient descent, especially for high-dimensional neural networks. Time complexity is also higher.
 
 ### Genetic Algorithm for Weight Initialization
 
-<img src="images/initial_weight_train.png" width="50%" />
+<div style="background-color: white; width:50%">
+  <img src="images/initial_weight_train.png" width="100%" />
+</div>
 <img src="images/initial_weight_train_loss.png" width="50%" />
 
 Using GA to initialize weights before training with gradient descent can help, but the model may still get stuck in local minima.
@@ -77,7 +78,9 @@ Using GA to initialize weights before training with gradient descent can help, b
 
 Simulated annealing is used to select the most relevant features, improving model performance and reducing overfitting. The results show that simulated annealing performs slightly better than random feature selection and is comparable to using all features.
 
-<img src="images/sa_ocmparison.png" width="50%" />
+<div style="background-color: white; width:50%">
+    <img src="images/sa_ocmparison.png" width="100%" />
+</div>
 
 ## Conclusion
 
